@@ -1,0 +1,27 @@
+const fs=require('fs');
+
+//making  folder
+//fs.mkdirSync("kk")
+
+//creating a file and writing data to it
+//fs.writeFileSync("kk/j.txt","this is node class")
+
+//updating the file
+//fs.appendFileSync("kk/j.txt","hello all")
+
+//reading data from a file with buffer data
+// const data=fs.readFileSync("kk/j.txt")
+// console.log(data)
+
+//reading data from a file without buffer data
+// const data1=fs.readFileSync("kk/j.txt","utf-8")
+// console.log(data1)
+
+//renaming file
+fs.renameSync("kk/j.txt","kk/j1.txt")
+
+//deliting file
+fs.unlinkSync("kk/j1.txt")
+
+//deliting folder
+fs.rmdirSync("kk")
